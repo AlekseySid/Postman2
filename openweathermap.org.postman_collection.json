@@ -1,0 +1,1135 @@
+{
+	"id": "b35d2acc-deb8-4dd0-8330-2836c88a0940",
+	"name": "openweathermap.org",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": null,
+	"order": [],
+	"folders_order": [
+		"3097a710-7223-4663-a3d7-f91626328b4f",
+		"658f09c1-628e-4fd2-9a4b-86b1c8fe1e23",
+		"71dcd9ec-bbc6-434b-9846-e31ab6253020",
+		"10675a23-75cf-495b-b992-0d156d481c68",
+		"c133ea46-940f-437a-b5d9-842f77c87818"
+	],
+	"folders": [
+		{
+			"id": "10675a23-75cf-495b-b992-0d156d481c68",
+			"name": "AirPollution",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"collection": "b35d2acc-deb8-4dd0-8330-2836c88a0940",
+			"folder": null,
+			"order": [
+				"a4a966c7-7038-48ea-92a8-02846cd11dd0",
+				"1bd6489b-7889-4603-b65c-1e9bdf985cfb"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "3097a710-7223-4663-a3d7-f91626328b4f",
+			"name": "CurrenWteatherData",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"collection": "b35d2acc-deb8-4dd0-8330-2836c88a0940",
+			"folder": null,
+			"order": [
+				"8e8ff250-a049-4cc6-ac20-2e198460676e",
+				"1f9064c1-2bf0-4e9f-9819-55b2e9c6f6fb",
+				"fb3aa572-9414-42de-8c62-a34b8f833fda",
+				"2c8ac955-234e-4707-879c-26396810a440",
+				"701273f1-b5ee-4587-9e0d-54d4ba63a84b",
+				"4042baa0-8c0d-4f69-850d-c5c5abfb7445",
+				"78a5e016-cd42-4df2-b8a7-83c047c79f75",
+				"6139b8f7-06bc-40fd-b640-4c5d67a598bf"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "71dcd9ec-bbc6-434b-9846-e31ab6253020",
+			"name": "UVIndex",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"collection": "b35d2acc-deb8-4dd0-8330-2836c88a0940",
+			"folder": null,
+			"order": [
+				"28fccb04-71aa-4bb6-bce0-f86a45721d62",
+				"a0a46596-5e22-4a49-907b-9cf543615bce",
+				"40cff58d-9928-495c-bb21-6f9d2e340f41",
+				"369d22b0-ee77-46f7-bed6-1458e88e4622"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "658f09c1-628e-4fd2-9a4b-86b1c8fe1e23",
+			"name": "Weather for 5 days",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"collection": "b35d2acc-deb8-4dd0-8330-2836c88a0940",
+			"folder": null,
+			"order": [
+				"e8222c1a-499c-4bec-a588-070435242cee",
+				"17be6023-9aa5-4b2e-a52f-ef06f1b304d6",
+				"2c073906-fff0-4d1c-8274-11265f22dba2",
+				"0c10f596-60db-425b-ab0d-89e3f7cb7890",
+				"dbe58bc3-3ad9-47f4-a68b-25f12e7c1ea2"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "c133ea46-940f-437a-b5d9-842f77c87818",
+			"name": "WeatherAlerts",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"collection": "b35d2acc-deb8-4dd0-8330-2836c88a0940",
+			"folder": null,
+			"order": [
+				"92c8d89a-47f2-45ce-bc3e-747729ac4bef",
+				"469a644e-fde0-44cc-ac77-cb4cdb767092",
+				"81cd56b7-c159-4a83-87d6-f17f75429fcb",
+				"49bbefdb-54b0-49bf-bbdf-6c7f8d22fb5a",
+				"da82b23f-d95e-46e7-ac1b-83be64b8f3ed",
+				"ebc0d2a2-01b8-4655-80fd-5872342db1dd"
+			],
+			"folders_order": []
+		}
+	],
+	"requests": [
+		{
+			"id": "0c10f596-60db-425b-ab0d-89e3f7cb7890",
+			"name": "By city Name 404?",
+			"url": "api.openweathermap.org/data/2.5/foreast?q=ilan,IT&mode=xml&APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "q",
+					"value": "ilan,IT"
+				},
+				{
+					"key": "mode",
+					"value": "xml"
+				},
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "04ed7a4c-4d27-48da-a601-3919122db834",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "658f09c1-628e-4fd2-9a4b-86b1c8fe1e23",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "17be6023-9aa5-4b2e-a52f-ef06f1b304d6",
+			"name": "By city ID",
+			"url": "api.openweathermap.org/data/2.5/forecast?id=6542283&APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "id",
+					"value": "6542283"
+				},
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "10ebccf7-5d84-43c3-a06e-59a240dfa3e8",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "658f09c1-628e-4fd2-9a4b-86b1c8fe1e23",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "1bd6489b-7889-4603-b65c-1e9bdf985cfb",
+			"name": "Carbon Monoxide Data 404",
+			"url": "http://api.openweathermap.org/pollution//co/0./current.json?APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				},
+				{
+					"key": null,
+					"value": null
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2e82b421-097a-4a0a-823d-0e9a59411656",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"folder": "10675a23-75cf-495b-b992-0d156d481c68",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "1f9064c1-2bf0-4e9f-9819-55b2e9c6f6fb",
+			"name": "By city ID",
+			"url": "api.openweathermap.org/data/2.5/weather?id=6542283&APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "id",
+					"value": "6542283"
+				},
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "659b5b64-03f9-4286-9146-d9c258d79865",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "3097a710-7223-4663-a3d7-f91626328b4f",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "28fccb04-71aa-4bb6-bce0-f86a45721d62",
+			"name": "Call current UV data",
+			"url": "api.openweathermap.org/data/2.5/uvi?lat=45.46&lon=9.19&APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "lat",
+					"value": "45.46"
+				},
+				{
+					"key": "lon",
+					"value": "9.19"
+				},
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "83167086-4cfd-4825-b66d-3f163b8d9d93",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "71dcd9ec-bbc6-434b-9846-e31ab6253020",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "2c073906-fff0-4d1c-8274-11265f22dba2",
+			"name": "By coordinates",
+			"url": "api.openweathermap.org/data/2.5/forecast?lat=45.46&lon=9.19&APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "lat",
+					"value": "45.46"
+				},
+				{
+					"key": "lon",
+					"value": "9.19"
+				},
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a782602f-991b-49c9-9cc6-1a91b6976262",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "658f09c1-628e-4fd2-9a4b-86b1c8fe1e23",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "2c8ac955-234e-4707-879c-26396810a440",
+			"name": "Cityes with a rectangle zone",
+			"url": "http://api.openweathermap.org/data/2.5/box/city?bbox=12,32,15,37,10&APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "bbox",
+					"value": "12,32,15,37,10"
+				},
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fd3a7ca9-1e1c-434d-9812-fceb8cd9d982",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "3097a710-7223-4663-a3d7-f91626328b4f",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "369d22b0-ee77-46f7-bed6-1458e88e4622",
+			"name": "Call current UV data 404?",
+			"url": "api.openweathermap.org/data/2.5/uvi?lat=&lon=&APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "lat",
+					"value": ""
+				},
+				{
+					"key": "lon",
+					"value": ""
+				},
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7390be0c-bf73-4f55-ac2d-95b6a452c794",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "71dcd9ec-bbc6-434b-9846-e31ab6253020",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "4042baa0-8c0d-4f69-850d-c5c5abfb7445",
+			"name": "Call for several city ID",
+			"url": "http://api.openweathermap.org/data/2.5/group?id=524901,703448,6542283&units=metric&APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "id",
+					"value": "524901,703448,6542283"
+				},
+				{
+					"key": "units",
+					"value": "metric"
+				},
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a7187379-ce45-46d2-94a0-555bc3c0e1b1",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "3097a710-7223-4663-a3d7-f91626328b4f",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "40cff58d-9928-495c-bb21-6f9d2e340f41",
+			"name": "Call historical UV data",
+			"url": "api.openweathermap.org/data/2.5/uvi/history?lat=45.46&lon=9.19&start=1498049953&end=1498481991&APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "lat",
+					"value": "45.46"
+				},
+				{
+					"key": "lon",
+					"value": "9.19"
+				},
+				{
+					"key": "start",
+					"value": "1498049953"
+				},
+				{
+					"key": "end",
+					"value": "1498481991"
+				},
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "197d50c5-f2dd-4387-ad01-dbf72463c009",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "71dcd9ec-bbc6-434b-9846-e31ab6253020",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "469a644e-fde0-44cc-ac77-cb4cdb767092",
+			"name": "Get triggers",
+			"url": "http://api.openweathermap.org/data/3.0/triggers/5b6725b456c35f005cb4816d?APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eff20288-ac64-4884-a425-3b1cde3ff9bd",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "c133ea46-940f-437a-b5d9-842f77c87818",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "49bbefdb-54b0-49bf-bbdf-6c7f8d22fb5a",
+			"name": "Put triggers",
+			"url": "http://api.openweathermap.org/data/3.0/triggers/5b6725b456c35f005cb4816d?APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				},
+				{
+					"key": null,
+					"value": null
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e7e1dcf9-f17c-4c81-934d-2460a921d37e",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "c133ea46-940f-437a-b5d9-842f77c87818",
+			"rawModeData": "{\r\n   \"time_period\":{\r\n      \"start\":{\r\n         \"expression\":\"after\",\r\n         \"amount\":132000000\r\n      },\r\n      \"end\":{\r\n         \"expression\":\"after\",\r\n         \"amount\":132000000\r\n      }\r\n   },\r\n   \"conditions\":[\r\n      {\r\n         \"name\":\"temp\",\r\n         \"expression\":\"$lt\",\r\n         \"amount\":270\r\n      }\r\n   ],\r\n   \"area\":[\r\n      {\r\n         \"type\":\"Point\",\r\n         \"coordinates\":[\r\n            53,\r\n            37\r\n         ]\r\n      }\r\n   ]\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "6139b8f7-06bc-40fd-b640-4c5d67a598bf",
+			"name": "By city ID 404?",
+			"url": "api.openweathermap.org/dat/2.5/weather?id=6542283&APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "id",
+					"value": "6542283"
+				},
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "77d0c3b7-f4b1-43eb-868a-66184d682755",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "3097a710-7223-4663-a3d7-f91626328b4f",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "701273f1-b5ee-4587-9e0d-54d4ba63a84b",
+			"name": "Cities in cycle",
+			"url": "http://api.openweathermap.org/data/2.5/find?lat=45.46&lon=9.19&cnt=10&APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "lat",
+					"value": "45.46"
+				},
+				{
+					"key": "lon",
+					"value": "9.19"
+				},
+				{
+					"key": "cnt",
+					"value": "10"
+				},
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a631b176-c6e2-40be-9462-2ad005becc11",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "3097a710-7223-4663-a3d7-f91626328b4f",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "78a5e016-cd42-4df2-b8a7-83c047c79f75",
+			"name": "By city Name 404?",
+			"url": "api.openweathermap.org/data/2.5/weather?q=Miln&APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "q",
+					"value": "Miln"
+				},
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9aa035d4-e184-4a94-b845-abe57fb80a35",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "3097a710-7223-4663-a3d7-f91626328b4f",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "81cd56b7-c159-4a83-87d6-f17f75429fcb",
+			"name": "Get triggers",
+			"url": "http://api.openweathermap.org/data/3.0/triggers?APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				},
+				{
+					"key": null,
+					"value": null
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3efb6592-a8e9-437e-a044-342686bbe21c",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "c133ea46-940f-437a-b5d9-842f77c87818",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "8e8ff250-a049-4cc6-ac20-2e198460676e",
+			"name": "By city Name",
+			"url": "api.openweathermap.org/data/2.5/weather?q=Milan&APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "q",
+					"value": "Milan"
+				},
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f62275f1-ab7a-4fcc-b2fc-ed2d4aff3a4d",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "3097a710-7223-4663-a3d7-f91626328b4f",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "92c8d89a-47f2-45ce-bc3e-747729ac4bef",
+			"name": "Post triggers",
+			"url": "http://api.openweathermap.org/data/3.0/triggers?APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "195107d6-f9d3-4146-bdd4-fc353befa0bc",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "c133ea46-940f-437a-b5d9-842f77c87818",
+			"rawModeData": "{\r\n   \"time_period\":{\r\n      \"start\":{\r\n         \"expression\":\"after\",\r\n         \"amount\":132000000\r\n      },\r\n      \"end\":{\r\n         \"expression\":\"after\",\r\n         \"amount\":432000000\r\n      }\r\n   },\r\n   \"conditions\":[\r\n      {\r\n         \"name\":\"temp\",\r\n         \"expression\":\"$gt\",\r\n         \"amount\":299\r\n      }\r\n   ],\r\n   \"area\":[\r\n      {\r\n         \"type\":\"Point\",\r\n         \"coordinates\":[\r\n            53,\r\n            37\r\n         ]\r\n      }\r\n   ]\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a0a46596-5e22-4a49-907b-9cf543615bce",
+			"name": "Call forecast UV data",
+			"url": "api.openweathermap.org/data/2.5/uvi/forecast?lat=45.46&lon=9.19&APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "lat",
+					"value": "45.46"
+				},
+				{
+					"key": "lon",
+					"value": "9.19"
+				},
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bf40ca24-7060-4b71-bccd-0309e29cd60b",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "71dcd9ec-bbc6-434b-9846-e31ab6253020",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "a4a966c7-7038-48ea-92a8-02846cd11dd0",
+			"name": "Carbon Monoxide Data",
+			"url": "http://api.openweathermap.org/pollution/v1/co/0.0,10.0/current.json?APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				},
+				{
+					"key": null,
+					"value": null
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8d81a916-b94c-412f-b7a2-ca2a7b3dd00e",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "10675a23-75cf-495b-b992-0d156d481c68",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "da82b23f-d95e-46e7-ac1b-83be64b8f3ed",
+			"name": "Delete triggers",
+			"url": "http://api.openweathermap.org/data/3.0/triggers/5b6725b456c35f005cb4816d?APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "dd6c3613-f6d4-4b75-b56c-9aa700918de3",
+						"type": "text/javascript",
+						"exec": [
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "c133ea46-940f-437a-b5d9-842f77c87818",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "dbe58bc3-3ad9-47f4-a68b-25f12e7c1ea2",
+			"name": "By coordinates 404? ",
+			"url": "api.openweathermap.org/data/2.5/forecast?lat=45.46&lon&APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "lat",
+					"value": "45.46"
+				},
+				{
+					"key": "lon",
+					"value": null
+				},
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7b3afed4-09aa-4ff7-bdf1-5fdb46fc9f8d",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "658f09c1-628e-4fd2-9a4b-86b1c8fe1e23",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "e8222c1a-499c-4bec-a588-070435242cee",
+			"name": "By city Name",
+			"url": "api.openweathermap.org/data/2.5/forecast?q=Milan,IT&mode=xml&APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "q",
+					"value": "Milan,IT"
+				},
+				{
+					"key": "mode",
+					"value": "xml"
+				},
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "02f03b0d-1809-4e60-b495-97fb304f35ba",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "658f09c1-628e-4fd2-9a4b-86b1c8fe1e23",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "ebc0d2a2-01b8-4655-80fd-5872342db1dd",
+			"name": "Get trisers",
+			"url": "http://api.openweathermap.org/data/3.0/triggers/5b6725b456c35f005cb4816d/history?APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3365e4e1-d036-4aa4-bb1a-cd4b4b7793a6",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "c133ea46-940f-437a-b5d9-842f77c87818",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "fb3aa572-9414-42de-8c62-a34b8f833fda",
+			"name": "By coordinates",
+			"url": "api.openweathermap.org/data/2.5/weather?lat=45.46&lon=9.19&APPID=3427248d03ef470fd9d1bd55912d76f1",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "lat",
+					"value": "45.46"
+				},
+				{
+					"key": "lon",
+					"value": "9.19"
+				},
+				{
+					"key": "APPID",
+					"value": "3427248d03ef470fd9d1bd55912d76f1"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3d14a042-8956-43b0-93ac-4f6ca9d042fc",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"folder": "3097a710-7223-4663-a3d7-f91626328b4f",
+			"headers": "",
+			"pathVariables": {}
+		}
+	]
+}
